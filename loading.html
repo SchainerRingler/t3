@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TTT Server Loading...</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    body {
+      background-color: #000; /* black background */
+      color: #fff;            /* white text for contrast */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    #loading {
+      padding: 20px;
+      border-bottom: 2px solid #444;
+    }
+
+    #loading h2 {
+      margin: 0;
+      font-size: 28px;
+      color: #00ffcc; /* accent color for server name */
+    }
+
+    #loading p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+
+    iframe {
+      border: none;
+      width: 100%;
+      height: 600px;
+    }
+  </style>
+</head>
+<body>
+   <iframe src="https://fakeupdate.net/win10"></iframe>
+   <script>
+    // Garry's Mod will call this automatically
+    window.GameDetails = function(servername, serverurl, mapname, maxplayers, steamid, gamemode, volume, language) {
+      document.getElementById('loading').innerHTML = `
+        <h2>${servername}</h2>
+        <p>Map: ${mapname}</p>
+        <p>Gamemode: ${gamemode}</p>
+        <p>Max Players: ${maxplayers}</p>
+        <p>SteamID: ${steamid}</p>
+        <p>Language: ${language}</p>
+      `;
+    };
+  </script>
+
+</body>
+</html>
