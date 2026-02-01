@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #f5f5f5;
+  background: linear-gradient(to bottom, #FFD700 0%, #FF1493 50%, #000000 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(0,0,0,0.6);
+}
+header h1 {
+  margin: 0;
+  font-size: 3em;
+  color: #FFD700; /* Yellow accent */
+  text-shadow: 2px 2px 8px #000;
+}
+nav {
+      margin-top: 15px;
+    }
+nav a {
+  color: #f5f5f5;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #FF1493; /* Pink hover */
+}
+
+/* Sections */
+section {
+      padding: 60px 20px;
+      text-align: center;
+      flex: 1;
+    }
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #FF1493; /* Pink accent */
+  text-shadow: 1px 1px 6px #000;
+}
+section p {
+      font-size: 1.2em;
+      font-family: 'Comic Sans MS';
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+/* Call-to-action button */
+.cta {
+  display: inline-block;
+  margin-top: 20px;
+  background: #FFD700; /* Yellow button */
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+.cta:hover {
+  background: #FF1493; /* Pink hover */
+  color: white;
+  transform: scale(1.05);
+}
+footer {
+      background: #FF1493;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.0em;
+      font-weight: bold;
+    }
