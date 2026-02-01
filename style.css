@@ -23,7 +23,7 @@ header {
 }
 header h1 {
   margin: 0;
-  font-size: 3em;
+  font-size: 4em;
   color: #FFD700; /* Yellow accent */
   text-shadow: 2px 2px 8px #000;
 }
@@ -48,13 +48,13 @@ section {
       flex: 1;
     }
 section h2 {
-  font-size: 2em;
+  font-size: 3em;
   margin-bottom: 20px;
   color: #FF1493; /* Pink accent */
   text-shadow: 1px 1px 6px #000;
 }
 section p {
-      font-size: 1.2em;
+      font-size: 1.5em;
       font-family: 'Comic Sans MS';
       max-width: 600px;
       margin: 0 auto;
