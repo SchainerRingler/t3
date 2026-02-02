@@ -4,24 +4,11 @@
   <meta charset="UTF-8">
   <title>TTT Server Loading...</title>
   <link rel="stylesheet" href="style.css"> 
-  
 </head>
 <body>
-    <script>
-    function GameDetails( servername, serverurl, mapname, maxplayers, steamid, gamemode, volume, language ) {}  
-    // Garry's Mod will call this automatically
-    window.GameDetails = function(servername, serverurl, mapname, maxplayers, steamid, gamemode, volume, language) {
-      document.getElementById('loading').innerHTML = `
-        <h2>${servername}</h2>
-        <p>Map: ${mapname}</p>
-        <p>Gamemode: ${gamemode}</p>
-        <p>Max Players: ${maxplayers}</p>
-        <p>SteamID: ${steamid}</p>
-        <p>Language: ${language}</p>
-      `;
-    };
-  </script>
-
-   
+  <section>
+  <div id="game-details"></div>
+  </section>
+  <script src="script.js"></script>
 </body>
 </html>
