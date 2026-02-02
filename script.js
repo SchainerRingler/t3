@@ -2,12 +2,9 @@ function GameDetails(servername, serverurl, mapname, maxplayers, steamid, gamemo
   // Create a string of HTML with the details
   const details = `
     <h2>${servername}</h2>
-    <p><strong>Server URL:</strong> <a href="${serverurl}" target="_blank">${serverurl}</a></p>
     <p><strong>Map:</strong> ${mapname}</p>
     <p><strong>Max Players:</strong> ${maxplayers}</p>
-    <p><strong>Steam ID:</strong> ${steamid}</p>
     <p><strong>Game Mode:</strong> ${gamemode}</p>
-    <p><strong>Volume:</strong> ${volume}</p>
     <p><strong>Language:</strong> ${language}</p>
   `;
 
@@ -54,5 +51,6 @@ function SetFilesNeeded(needed) {
 
   document.getElementById("files-needed").innerHTML = filesneeded;
 }
+
 
 //SetFilesNeeded("12")
